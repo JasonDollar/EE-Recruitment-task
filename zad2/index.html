@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Wylosowana liczba to: <span class="randNumber"></span></h1>
+    <p class="instructions">Proszę zatwierdź liczbę przyciskiem poniżej, lub zakończ program</p>
+    <div class="button-box">
+      <button class="btn btn-confirm" disabled>Zatwierdzam</button>
+      <button class="btn btn-stop">Kończę na dziś</button>
+    </div>
+    <h3 class="timer-message hidden">Nowa liczba pojawi się za: <span class="timer"></span>s</h3>
+    <div class="stop-message hidden">
+      <img class="gif-image" src="https://engineer-mansy.com/diary/wp-content/uploads/2015/07/fkLF9.gif" alt="Sad man in the rain gif">
+      <p>Sorry to see you go</p>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
