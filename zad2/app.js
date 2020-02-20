@@ -47,6 +47,7 @@ const stopApp = () => {
   randNumberSpan.text(null)
   stopMessageEl.removeClass('hidden')
   confirmButton.prop('disabled', true)
+  stopButton.prop('disabled', true)
 }
 
 confirmButton.on('click', confirmNumber)
