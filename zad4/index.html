@@ -4,12 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Zad 4</title>
 </head>
 <body>
   <div class="container flex-container">
 
-    .box
+    <div class="box text-box">
+      <p class="top-text">TOP TEXT</p>
+      <p class="bottom-text">LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT LONG BOTTOM TEXT</p>
+    </div>
+    <div class="grey-box">
+      <p class="grey-box-numbers"><span class="width">400</span> x 800</p>
+      <p class="grey-bottom-text">Powered by HTML.COM</p>
+    </div>
+    <div class="box lorem-box">
+      <p class="lorem-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero tenetur eligendi delectus eveniet dicta optio, omnis nemo consequatur animi, perspiciatis deleniti sapiente fuga totam! Illum dignissimos ratione quas corrupti. Culpa!</p>
+    </div>
   </div>
+
+  <script>
+    const widthSpan = document.querySelector('.width')
+    window.addEventListener('resize', e => {
+      if (e.target.innerWidth <= 400) {
+        widthSpan.textContent = innerWidth
+      } else if (e.target.innerWidth >= 400 && widthSpan.textContent !== 400) {
+        widthSpan.textContent = 400
+      }
+    }) 
+  </script>
 </body>
 </html>
